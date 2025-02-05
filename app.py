@@ -109,7 +109,7 @@ def iniciar_bot(valor_inicial_string, escrever_log_callback=None):
             break
         
         while not verificar_rolando():
-            log("Aguardando início da rodada...\n")
+            # log("Aguardando início da rodada...\n")
             sleep(2)
             
         pg.screenshot("resultados/ultimo_resultado.png", region=regioes['ultimo_resultado'])
@@ -125,10 +125,10 @@ def iniciar_bot(valor_inicial_string, escrever_log_callback=None):
             antepenultimo_resultado is None):
             log("Erro ao encontrar resultados, reiniciando a busca.\n")
         
-        log(f"Ultimo Resultado: {ultimo_resultado}\n"
-            f"Penúltimo Resultado: {penultimo_resultado}\n"
-            f"Antepenultimo Resultado: {antepenultimo_resultado}\n")
-        log("-------------------------------------------------------------------")
+        # log(f"Ultimo Resultado: {ultimo_resultado}\n"
+        #     f"Penúltimo Resultado: {penultimo_resultado}\n"
+        #     f"Antepenultimo Resultado: {antepenultimo_resultado}\n")
+        # log("-------------------------------------------------------------------")
         
         if (ultimo_resultado == penultimo_resultado == antepenultimo_resultado == "ct"):
             log(f"Encontrado 3 resultados para CT, iniciando aposta em TR com {valor_inicial} moedas.\n")

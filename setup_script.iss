@@ -5,7 +5,7 @@
 #define MyAppVersion "1.1"
 #define MyAppPublisher "Otoch IA Solutions"
 #define MyAppURL "https://hugootoch.vercel.app/"
-#define MyAppExeName "app.exe"
+#define MyAppExeName "tela.exe"
 
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application. Do not use the same AppId value in installers for other applications.

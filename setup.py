@@ -5,7 +5,7 @@ from cx_Freeze import setup, Executable
 
 base = None
 if sys.platform == "win32":
-    base="console" # para não abrir o console ao iniciar o EXE
+    base="Win32GUI" # para não abrir o console ao iniciar o EXE
     
 build_exe_options = {
     "packages": ["tkinter", "ttkbootstrap", "pyautogui", "threading", "os", "time", "pyperclip"],
@@ -21,7 +21,7 @@ build_exe_options = {
 
 executables = [
     Executable(
-        script="app.py",      
+        script="tela.py",      
         base=base,
         icon="robo.ico"         
     )
