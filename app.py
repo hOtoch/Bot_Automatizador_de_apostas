@@ -51,7 +51,7 @@ def verificar_resultado(regiao):
         pass
     
 def colocar_valor(valor):
-    pg.click(x=random.randint(630,800), y=438, duration=1)
+    pg.click(x=random.randint(610,800), y=504, duration=1)
     sleep(0.5)
     escrever_frase(str(valor))
     
@@ -92,9 +92,9 @@ def iniciar_bot(valor_inicial_string, escrever_log_callback=None):
     global bot_ativo
     
     regioes = {
-        'ultimo_resultado': (1021, 367, 33, 33),
-        'penultimo_resultado': (992, 367, 33, 33),
-        'antepenultimo_resultado': (962, 367, 33, 33)
+        'ultimo_resultado': (1023, 434, 33, 33),
+        'penultimo_resultado': (994, 434, 33, 33),
+        'antepenultimo_resultado': (965, 434, 33, 33)
     }
     valor_inicial = float(valor_inicial_string)
     valor_atual = valor_inicial
@@ -135,7 +135,7 @@ def iniciar_bot(valor_inicial_string, escrever_log_callback=None):
             log("-------------------------------------------------------------------")
             # Apostar TR
             colocar_valor(valor_inicial)
-            pg.click(x=random.randint(1300,1500), y=529, duration=0.7)  # Apostar no TR
+            pg.click(x=random.randint(1300,1500), y=616, duration=0.7)  # Apostar no TR
             
             # Aguardar o final da rodada atual
             while verificar_rolando():
@@ -173,7 +173,7 @@ def iniciar_bot(valor_inicial_string, escrever_log_callback=None):
             log("-------------------------------------------------------------------")
             # Apostar CT
             colocar_valor(valor_inicial)
-            pg.click(x=random.randint(500,700), y=526, duration=0.5)
+            pg.click(x=random.randint(387,700), y=611, duration=0.5)
             
             # Aguardar o final da rodada atual
             while verificar_rolando():
